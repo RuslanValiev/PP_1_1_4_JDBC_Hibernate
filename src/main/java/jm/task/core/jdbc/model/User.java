@@ -22,6 +22,17 @@ public class User {
 
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("User{");
+        sb.append("id=").append(id);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append(", age=").append(age);
+        sb.append('}');
+        return sb.toString();
+    }
+
     public User(String name, String lastName, Byte age) {
         this.name = name;
         this.lastName = lastName;

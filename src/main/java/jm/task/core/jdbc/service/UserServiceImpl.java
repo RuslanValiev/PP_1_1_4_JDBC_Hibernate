@@ -17,19 +17,6 @@ public class UserServiceImpl extends UserDaoJDBCImpl implements UserService {
 
     UserDao userDao = new UserDaoHibernateImpl();
 
-
-    //    UserDao userDao = new UserDaoJDBCImpl();
-//    Connection connection = Util.getConnection();
-//    Statement statement;
-//
-//    {
-//        try {
-//            statement = connection.createStatement();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
     public void createUsersTable() {
         userDao.createUsersTable();
     }
